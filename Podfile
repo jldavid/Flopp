@@ -8,5 +8,6 @@ target 'Flopp' do
   pod 'SDWebImage'
   pod 'MagicalRecord'
   pod 'ReachabilitySwift'
+  pod 'BadgeSwift'
 
 end

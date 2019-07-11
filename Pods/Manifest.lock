@@ -1,22 +1,36 @@
 PODS:
   - Alamofire (4.8.1)
+  - BadgeSwift (7.0.0)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - ReachabilitySwift (4.3.0)
   - SDWebImage (4.4.6):
     - SDWebImage/Core (= 4.4.6)
   - SDWebImage/Core (4.4.6)
 
 DEPENDENCIES:
   - Alamofire
+  - BadgeSwift
+  - MagicalRecord
+  - ReachabilitySwift
   - SDWebImage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - BadgeSwift
+    - MagicalRecord
+    - ReachabilitySwift
     - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  BadgeSwift: 5cfacfad916d85e2f68d93dbb9ade4e9555903da
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
 
-PODFILE CHECKSUM: 54b78394b7c3a5b1aaf06fc777354747b5a564e0
+PODFILE CHECKSUM: 11af210d2ac0c11cd714b5a04548add690b48022
 
 COCOAPODS: 1.6.1
