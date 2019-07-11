@@ -10,6 +10,7 @@
 		970A93946564EB8DFB23AEC7 /* Pods_Flopp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD31E7FDEFE6D7EF8349606A /* Pods_Flopp.framework */; };
 		E529ABC022D745E400EB25CE /* Mobile_Engineering_Take_Home.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E529ABBF22D745E400EB25CE /* Mobile_Engineering_Take_Home.pdf */; };
 		E529ABC222D7463C00EB25CE /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E529ABC122D7463C00EB25CE /* MovieDetailsViewController.swift */; };
+		E529ABC422D76CCD00EB25CE /* StoredMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E529ABC322D76CCD00EB25CE /* StoredMovies.swift */; };
 		E5E3437F22D5CEF500EC5A6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E3437E22D5CEF500EC5A6F /* AppDelegate.swift */; };
 		E5E3438422D5CEF500EC5A6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E3438222D5CEF500EC5A6F /* Main.storyboard */; };
 		E5E3438622D5CEF700EC5A6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E3438522D5CEF700EC5A6F /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		DD31E7FDEFE6D7EF8349606A /* Pods_Flopp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flopp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E529ABBF22D745E400EB25CE /* Mobile_Engineering_Take_Home.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Mobile_Engineering_Take_Home.pdf; sourceTree = "<group>"; };
 		E529ABC122D7463C00EB25CE /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		E529ABC322D76CCD00EB25CE /* StoredMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredMovies.swift; sourceTree = "<group>"; };
 		E5E3437B22D5CEF500EC5A6F /* Flopp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flopp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E3437E22D5CEF500EC5A6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5E3438322D5CEF500EC5A6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,7 +44,6 @@
 		E5E343AE22D5D33B00EC5A6F /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		E5E343B222D5D3E600EC5A6F /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		E5E343B422D5D3F700EC5A6F /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
-		E5E343BB22D5DF5700EC5A6F /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5E343C122D5ED3200EC5A6F /* ListingDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDataManager.swift; sourceTree = "<group>"; };
 		E5E343C322D5ED4F00EC5A6F /* MovieAppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,7 +72,6 @@
 		BC979DFFA06256024745CA06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E5E343BB22D5DF5700EC5A6F /* iOSDropDown.framework */,
 				DD31E7FDEFE6D7EF8349606A /* Pods_Flopp.framework */,
 			);
 			name = Frameworks;
@@ -170,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				E5E343A922D5D0E900EC5A6F /* Movie.swift */,
+				E529ABC322D76CCD00EB25CE /* StoredMovies.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -321,6 +322,7 @@
 				"${BUILT_PRODUCTS_DIR}/MagicalRecord/MagicalRecord.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -331,6 +333,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MagicalRecord.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -352,6 +355,7 @@
 				E5E343C222D5ED3200EC5A6F /* ListingDataManager.swift in Sources */,
 				E5E343C422D5ED4F00EC5A6F /* MovieAppManager.swift in Sources */,
 				E5E343AA22D5D0E900EC5A6F /* Movie.swift in Sources */,
+				E529ABC422D76CCD00EB25CE /* StoredMovies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

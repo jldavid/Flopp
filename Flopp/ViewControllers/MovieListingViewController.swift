@@ -1,6 +1,7 @@
 import UIKit
 import Foundation
 import SDWebImage
+import MagicalRecord
 
 class MovieListingViewController: UIViewController {
     
@@ -19,6 +20,9 @@ class MovieListingViewController: UIViewController {
             if success {
                 self.movies = MovieDataManager.shared.getMovies()
                 self.tableView.reloadData()
+            } else {
+                let storedMovie = StoredMovies.mr_findAll()
+                
             }
         }
     }

@@ -6,8 +6,9 @@ target 'Flopp' do
 
   pod 'Alamofire'
   pod 'SDWebImage'
-  pod 'MagicalRecord'
-  pod 'ReachabilitySwift'
-  pod 'BadgeSwift'
+  pod 'MagicalRecord', :inhibit_warnings => true
+  pod 'ReachabilitySwift', :inhibit_warnings => true
+  pod 'BadgeSwift', :inhibit_warnings => true
+  pod 'SwiftyJSON', :inhibit_warnings => true
 
 end
