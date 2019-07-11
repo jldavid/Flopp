@@ -6,5 +6,7 @@ target 'Flopp' do
 
   pod 'Alamofire'
   pod 'SDWebImage'
+  pod 'MagicalRecord'
+  pod 'ReachabilitySwift'
 
 end
